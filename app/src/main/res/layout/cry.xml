@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF4F6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:src="@drawable/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:text="@string/hi_jerry"
+            android:textColor="#1F1F1E"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dec"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:text="@string/which_tom_do_you_want_to_buy"
+            android:textColor="#A5A6A4"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/header_title" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="204dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_avatar"
+            android:padding="8dp"
+            android:src="@drawable/notification"
+            app:layout_constraintStart_toEndOf="@id/header_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/tint0" />
+
+        <TextView
+            android:id="@+id/notificationCount"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center"
+            android:text="@string/three"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textSize10"
+            app:layout_constraintBottom_toBottomOf="@+id/notification"
+            app:layout_constraintEnd_toEndOf="@+id/notification" />
+
+        <ImageView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="72dp"
+            android:background="@drawable/card_border"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            app:tint="#969799" />
+
+        <TextView
+            android:id="@+id/searchHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/search_about_tom"
+            android:paddingStart="12dp"
+            app:drawableStartCompat="@drawable/search_normal"
+            app:drawableTint="#969799"
+            app:layout_constraintBottom_toBottomOf="@id/search_bar" />
+
+        <ImageButton
+            android:id="@+id/filter_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_button"
+            android:padding="12dp"
+            android:src="@drawable/filter_horizontal"
+            app:layout_constraintStart_toEndOf="@+id/search_bar"
+            app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+        <TextView
+            android:id="@+id/base_card"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_tom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+        <TextView
+            android:id="@+id/buy_tom"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/buy_1_tom_and_get_2_for_free"
+            app:layout_constraintStart_toStartOf="@id/base_card"
+            app:layout_constraintTop_toTopOf="@id/base_card"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/scond_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Adopt Tom! (Free Fail-Free Guarantee)"
+            app:layout_constraintStart_toStartOf="@id/buy_tom"
+            app:layout_constraintEnd_toEndOf="@id/buy_tom"
+            app:layout_constraintTop_toBottomOf="@id/buy_tom"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:maxLines="2"/>
+
+        <ImageView
+            android:id="@+id/ellipse1"
+            android:layout_width="139dp"
+            android:layout_height="113dp"
+            android:layout_marginEnd="-30dp"
+            android:src="@drawable/ellipse1"
+            app:layout_constraintEnd_toEndOf="@id/base_card"
+            app:layout_constraintTop_toTopOf="@id/base_card" />
+
+        <ImageView
+            android:id="@+id/ellipse2"
+            android:layout_width="132dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="-8dp"
+            android:src="@drawable/ellipse2"
+            app:layout_constraintEnd_toEndOf="@id/ellipse1"
+            app:layout_constraintTop_toTopOf="@id/ellipse1" />
+
+        <ImageView
+            android:id="@+id/tommm"
+            android:layout_width="126dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/tomm"
+            app:layout_constraintBottom_toBottomOf="@+id/ellipse2"
+            app:layout_constraintEnd_toEndOf="@id/ellipse1" />
+
+        <!-- Section Header -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:text="@string/cheap_tom_section"
+            android:textColor="#1F1F1E"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/base_card" />
+
+        <TextView
+            android:id="@+id/text_end_icon"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintBaseline_toBaselineOf="@id/text_header"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:text="@string/view_all"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableEndCompat="@drawable/arrow_right"
+            app:drawableTint="#03578A"
+            app:layout_constraintEnd_toEndOf="@+id/text_header"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/text_header"
+            app:layout_constraintTop_toBottomOf="@id/base_card" />
+
+        <TextView
+            android:id="@+id/card_base_back1"
+            android:layout_width="160dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+        <ImageView
+            android:id="@+id/sport_image1"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="144dp"
+            android:src="@drawable/sport"
+            app:layout_constraintBottom_toBottomOf="@id/card_base_back1"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back1"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@id/card_base_back1" />
+
+        <TextView
+            android:id="@+id/sport_text1"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:gravity="center"
+            android:text="@string/sport_tom"
+            android:textColor="#1F1F1E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/card_base_back1"
+            app:layout_constraintTop_toBottomOf="@id/sport_image1" />
+
+        <TextView
+            android:id="@+id/sport_text_dec1"
+            android:layout_width="144dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:gravity="center"
+            android:text="@string/he_runs_1_meter_trips_over_his_boot"
+            android:textColor="#969799"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back1"
+            app:layout_constraintStart_toStartOf="@id/card_base_back1" />
+
+        <TextView
+            android:id="@+id/card_cont1"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_chip_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="5 3̶ cheeses"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/money"
+            app:drawableTint="#03578A"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back1"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back1"
+            app:layout_constraintStart_toStartOf="@id/card_base_back1"
+            app:layout_constraintTop_toBottomOf="@id/sport_text_dec1" />
+
+        <ImageButton
+            android:id="@+id/add_button1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/card_border_cont"
+            android:src="@drawable/add_to_cart_icon"
+            app:layout_constraintStart_toEndOf="@id/card_cont1"
+            app:layout_constraintTop_toTopOf="@+id/card_cont1" />
+
+        <TextView
+            android:id="@+id/card_base_back2"
+            android:layout_width="160dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toEndOf="@+id/card_base_back1"
+            app:layout_constraintTop_toTopOf="@+id/card_base_back1" />
+
+        <ImageView
+            android:id="@+id/sport_image2"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="144dp"
+            android:src="@drawable/tom_the_lover"
+            app:layout_constraintBottom_toBottomOf="@id/card_base_back2"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back2"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@id/card_base_back2" />
+
+        <TextView
+            android:id="@+id/sport_text2"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:gravity="center"
+            android:text="Tom the lover"
+            android:textColor="#1F1F1E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/card_base_back2"
+            app:layout_constraintTop_toBottomOf="@id/sport_image2" />
+
+        <TextView
+            android:id="@+id/sport_text_dec2"
+            android:layout_width="144dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="52dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:gravity="center"
+            android:text="He loves one-sidedly...
+            and is beaten by the other side."
+            android:textColor="#969799"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sport_text_dec1"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back2"
+            app:layout_constraintStart_toStartOf="@id/card_base_back2" />
+
+        <TextView
+            android:id="@+id/card_cont2"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_chip_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="5 cheeses"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/money"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back2"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back2"
+            app:layout_constraintStart_toStartOf="@id/card_base_back2"
+            app:layout_constraintTop_toBottomOf="@id/sport_text_dec2" />
+
+        <ImageButton
+            android:id="@+id/add_button2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/card_border_cont"
+            android:src="@drawable/add_to_cart_icon"
+            app:layout_constraintStart_toEndOf="@id/card_cont2"
+            app:layout_constraintTop_toTopOf="@+id/card_cont2" />
+
+        <TextView
+            android:id="@+id/card_base_back3"
+            android:layout_width="160dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_base_back1" />
+
+        <ImageView
+            android:id="@+id/sport_image3"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="144dp"
+            android:src="@drawable/tom_bomb"
+            app:layout_constraintBottom_toBottomOf="@id/card_base_back3"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back3"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@id/card_base_back3" />
+
+        <TextView
+            android:id="@+id/sport_text3"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:gravity="center"
+            android:text="Tom the bomb"
+            android:textColor="#1F1F1E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/card_base_back3"
+            app:layout_constraintTop_toBottomOf="@id/sport_image3" />
+
+        <TextView
+            android:id="@+id/sport_text_dec3"
+            android:layout_width="144dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:gravity="center"
+            android:text="He blows himself up
+            before Jerry can catch
+             him."
+            android:textColor="#969799"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back3"
+            app:layout_constraintStart_toStartOf="@id/card_base_back3" />
+
+        <TextView
+            android:id="@+id/card_cont3"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_chip_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="10 cheeses"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/money"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back3"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back3"
+            app:layout_constraintStart_toStartOf="@id/card_base_back3"
+            app:layout_constraintTop_toBottomOf="@id/sport_text_dec3" />
+
+        <ImageButton
+            android:id="@+id/add_button3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/card_border_cont"
+            android:src="@drawable/add_to_cart_icon"
+            app:layout_constraintStart_toEndOf="@id/card_cont3"
+            app:layout_constraintTop_toTopOf="@+id/card_cont3" />
+
+        <TextView
+            android:id="@+id/card_base_back4"
+            android:layout_width="160dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toEndOf="@+id/card_base_back3"
+            app:layout_constraintTop_toTopOf="@+id/card_base_back3" />
+
+        <ImageView
+            android:id="@+id/sport_image4"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="144dp"
+            android:src="@drawable/spy_tom"
+            app:layout_constraintBottom_toBottomOf="@id/card_base_back4"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back4"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@id/card_base_back4" />
+
+        <TextView
+            android:id="@+id/sport_text4"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:gravity="center"
+            android:text="Spy Tom"
+            android:textColor="#1F1F1E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/card_base_back4"
+            app:layout_constraintTop_toBottomOf="@id/sport_image4" />
+
+        <TextView
+            android:id="@+id/sport_text_dec4"
+            android:layout_width="144dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:gravity="center"
+            android:text="Disguises itself as a table."
+            android:textColor="#969799"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back4"
+            app:layout_constraintStart_toStartOf="@id/card_base_back4" />
+
+        <TextView
+            android:id="@+id/card_cont4"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_chip_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="12 cheeses"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/money"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back4"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back4"
+            app:layout_constraintStart_toStartOf="@id/card_base_back4"
+            app:layout_constraintTop_toBottomOf="@id/sport_text_dec4" />
+
+        <ImageButton
+            android:id="@+id/add_button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/card_border_cont"
+            android:src="@drawable/add_to_cart_icon"
+            app:layout_constraintStart_toEndOf="@id/card_cont4"
+            app:layout_constraintTop_toTopOf="@+id/card_cont4" />
+
+        <TextView
+            android:id="@+id/card_base_back5"
+            android:layout_width="160dp"
+            android:layout_height="219dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_background"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_base_back3" />
+
+        <ImageView
+            android:id="@+id/sport_image5"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="144dp"
+            android:src="@drawable/frozen_tom"
+            app:layout_constraintBottom_toBottomOf="@id/card_base_back5"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back5"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@id/card_base_back5" />
+
+        <TextView
+            android:id="@+id/sport_text5"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:gravity="center"
+            android:text="Frozen Tom"
+            android:textColor="#1F1F1E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/card_base_back5"
+            app:layout_constraintTop_toBottomOf="@id/sport_image5" />
+
+        <TextView
+            android:id="@+id/sport_text_dec5"
+            android:layout_width="144dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:gravity="center"
+            android:text="He was chasing Jerry, he froze after the first look"
+            android:textColor="#969799"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back5"
+            app:layout_constraintStart_toStartOf="@id/card_base_back5" />
+
+        <TextView
+            android:id="@+id/card_cont5"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_chip_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="10 cheeses"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/money"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back5"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back5"
+            app:layout_constraintStart_toStartOf="@id/card_base_back5"
+            app:layout_constraintTop_toBottomOf="@id/sport_text_dec5" />
+
+        <ImageButton
+            android:id="@+id/add_button5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/card_border_cont"
+            android:src="@drawable/add_to_cart_icon"
+            app:layout_constraintStart_toEndOf="@id/card_cont5"
+            app:layout_constraintTop_toTopOf="@+id/card_cont5" />
+
+        <TextView
+            android:id="@+id/card_base_back6"
+            android:layout_width="160dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toEndOf="@+id/card_base_back5"
+            app:layout_constraintTop_toTopOf="@+id/card_base_back5" />
+
+        <ImageView
+            android:id="@+id/sport_image6"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="144dp"
+            android:src="@drawable/sleeping_tom"
+            app:layout_constraintBottom_toBottomOf="@id/card_base_back6"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back6"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@id/card_base_back6" />
+
+        <TextView
+            android:id="@+id/sport_text6"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/imb_arabic_semibold"
+            android:gravity="center"
+            android:text="Sleeping Tom"
+            android:textColor="#1F1F1E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/card_base_back6"
+            app:layout_constraintTop_toBottomOf="@id/sport_image6" />
+
+        <TextView
+            android:id="@+id/sport_text_dec6"
+            android:layout_width="144dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/imb_arabic_regular"
+            android:gravity="center"
+            android:text="He doesn't chase anyone,
+             he just snores in stereo."
+            android:textColor="#969799"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back6"
+            app:layout_constraintStart_toStartOf="@id/card_base_back6" />
+
+        <TextView
+            android:id="@+id/card_cont6"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_chip_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/imb_arabic_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="10 cheeses"
+            android:textColor="#03578A"
+            android:textSize="12sp"
+            app:drawableStartCompat="@drawable/money"
+            app:layout_constraintBottom_toBottomOf="@+id/card_base_back6"
+            app:layout_constraintEnd_toEndOf="@id/card_base_back6"
+            app:layout_constraintStart_toStartOf="@id/card_base_back6"
+            app:layout_constraintTop_toBottomOf="@id/sport_text_dec6" />
+
+        <ImageButton
+            android:id="@+id/add_button6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/card_border_cont"
+            android:src="@drawable/add_to_cart_icon"
+            app:layout_constraintStart_toEndOf="@id/card_cont6"
+            app:layout_constraintTop_toTopOf="@+id/card_cont6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
