@@ -302,7 +302,7 @@
             app:layout_constraintTop_toTopOf="@+id/card_base_back1" />
 
         <ImageView
-            android:id="@+id/sport_image2"
+            android:id="@+id/lover_image"
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_marginStart="16dp"
@@ -315,7 +315,7 @@
             app:layout_constraintStart_toStartOf="@id/card_base_back2" />
 
         <TextView
-            android:id="@+id/sport_text2"
+            android:id="@+id/lover_text"
             android:layout_width="144dp"
             android:layout_height="27dp"
             android:layout_marginTop="8dp"
@@ -325,10 +325,10 @@
             android:textColor="#1F1F1E"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@id/card_base_back2"
-            app:layout_constraintTop_toBottomOf="@id/sport_image2" />
+            app:layout_constraintTop_toBottomOf="@id/lover_image" />
 
         <TextView
-            android:id="@+id/sport_text_dec2"
+            android:id="@+id/lover_text_dec"
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="4dp"
@@ -364,7 +364,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/card_base_back2"
             app:layout_constraintEnd_toEndOf="@id/card_base_back2"
             app:layout_constraintStart_toStartOf="@id/card_base_back2"
-            app:layout_constraintTop_toBottomOf="@id/sport_text_dec2" />
+            app:layout_constraintTop_toBottomOf="@id/lover_text_dec" />
 
         <ImageButton
             android:id="@+id/add_button2"
@@ -387,7 +387,7 @@
             app:layout_constraintTop_toBottomOf="@+id/card_base_back1" />
 
         <ImageView
-            android:id="@+id/sport_image3"
+            android:id="@+id/bomb_image3"
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_marginStart="16dp"
@@ -410,10 +410,10 @@
             android:textColor="#1F1F1E"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@id/card_base_back3"
-            app:layout_constraintTop_toBottomOf="@id/sport_image3" />
+            app:layout_constraintTop_toBottomOf="@id/bomb_image3" />
 
         <TextView
-            android:id="@+id/sport_text_dec3"
+            android:id="@+id/bomb_text_dec3"
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -449,7 +449,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/card_base_back3"
             app:layout_constraintEnd_toEndOf="@id/card_base_back3"
             app:layout_constraintStart_toStartOf="@id/card_base_back3"
-            app:layout_constraintTop_toBottomOf="@id/sport_text_dec3" />
+            app:layout_constraintTop_toBottomOf="@id/bomb_text_dec3" />
 
         <ImageButton
             android:id="@+id/add_button3"
@@ -471,7 +471,7 @@
             app:layout_constraintTop_toTopOf="@+id/card_base_back3" />
 
         <ImageView
-            android:id="@+id/sport_image4"
+            android:id="@+id/spy_image4"
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_marginStart="16dp"
@@ -484,7 +484,7 @@
             app:layout_constraintStart_toStartOf="@id/card_base_back4" />
 
         <TextView
-            android:id="@+id/sport_text4"
+            android:id="@+id/spy_text4"
             android:layout_width="144dp"
             android:layout_height="27dp"
             android:layout_marginTop="8dp"
@@ -494,10 +494,10 @@
             android:textColor="#1F1F1E"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@id/card_base_back4"
-            app:layout_constraintTop_toBottomOf="@id/sport_image4" />
+            app:layout_constraintTop_toBottomOf="@id/spy_image4" />
 
         <TextView
-            android:id="@+id/sport_text_dec4"
+            android:id="@+id/spy_text_dec4"
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -531,7 +531,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/card_base_back4"
             app:layout_constraintEnd_toEndOf="@id/card_base_back4"
             app:layout_constraintStart_toStartOf="@id/card_base_back4"
-            app:layout_constraintTop_toBottomOf="@id/sport_text_dec4" />
+            app:layout_constraintTop_toBottomOf="@id/spy_text_dec4" />
 
         <ImageButton
             android:id="@+id/add_button4"
@@ -554,7 +554,7 @@
             app:layout_constraintTop_toBottomOf="@+id/card_base_back3" />
 
         <ImageView
-            android:id="@+id/sport_image5"
+            android:id="@+id/frozen_image5"
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_marginStart="16dp"
@@ -577,10 +577,10 @@
             android:textColor="#1F1F1E"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@id/card_base_back5"
-            app:layout_constraintTop_toBottomOf="@id/sport_image5" />
+            app:layout_constraintTop_toBottomOf="@id/frozen_image5" />
 
         <TextView
-            android:id="@+id/sport_text_dec5"
+            android:id="@+id/frozen_text_dec5"
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -614,7 +614,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/card_base_back5"
             app:layout_constraintEnd_toEndOf="@id/card_base_back5"
             app:layout_constraintStart_toStartOf="@id/card_base_back5"
-            app:layout_constraintTop_toBottomOf="@id/sport_text_dec5" />
+            app:layout_constraintTop_toBottomOf="@id/frozen_text_dec5" />
 
         <ImageButton
             android:id="@+id/add_button5"
@@ -636,7 +636,7 @@
             app:layout_constraintTop_toTopOf="@+id/card_base_back5" />
 
         <ImageView
-            android:id="@+id/sport_image6"
+            android:id="@+id/sleeping_image6"
             android:layout_width="100dp"
             android:layout_height="93dp"
             android:layout_marginStart="16dp"
@@ -649,7 +649,7 @@
             app:layout_constraintStart_toStartOf="@id/card_base_back6" />
 
         <TextView
-            android:id="@+id/sport_text6"
+            android:id="@+id/sleeping_text6"
             android:layout_width="144dp"
             android:layout_height="27dp"
             android:layout_marginTop="8dp"
@@ -659,10 +659,10 @@
             android:textColor="#1F1F1E"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@id/card_base_back6"
-            app:layout_constraintTop_toBottomOf="@id/sport_image6" />
+            app:layout_constraintTop_toBottomOf="@id/sleeping_image6" />
 
         <TextView
-            android:id="@+id/sport_text_dec6"
+            android:id="@+id/sleeping_text_dec6"
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -697,7 +697,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/card_base_back6"
             app:layout_constraintEnd_toEndOf="@id/card_base_back6"
             app:layout_constraintStart_toStartOf="@id/card_base_back6"
-            app:layout_constraintTop_toBottomOf="@id/sport_text_dec6" />
+            app:layout_constraintTop_toBottomOf="@id/sleeping_text_dec6" />
 
         <ImageButton
             android:id="@+id/add_button6"
