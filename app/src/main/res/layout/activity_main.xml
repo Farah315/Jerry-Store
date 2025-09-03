@@ -147,7 +147,7 @@
             android:fontFamily="@font/imb_arabic_regular"
             android:maxLines="2"
             android:text="Adopt Tom! (Free Fail-Free Guarantee)"
-            android:textColor="#FFFFFFCC"
+            android:textColor="#FFFFFC"
             app:layout_constraintBottom_toBottomOf="@+id/base_card"
             app:layout_constraintEnd_toEndOf="@id/buy_tom"
             app:layout_constraintStart_toStartOf="@id/buy_tom"
@@ -336,7 +336,7 @@
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="4dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="64dp"
             android:fontFamily="@font/imb_arabic_regular"
             android:gravity="center"
             android:text="He loves one-sidedly...
@@ -421,6 +421,7 @@
             android:layout_width="144dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="64dp"
             android:fontFamily="@font/imb_arabic_regular"
             android:gravity="center"
@@ -430,7 +431,8 @@
             android:textColor="#969799"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/card_base_back3"
-            app:layout_constraintStart_toStartOf="@id/card_base_back3" />
+            app:layout_constraintStart_toStartOf="@id/card_base_back3"
+            app:layout_constraintTop_toBottomOf="@+id/sport_text3" />
 
         <TextView
             android:id="@+id/card_cont3"
