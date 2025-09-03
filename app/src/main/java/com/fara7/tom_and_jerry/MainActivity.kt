@@ -10,9 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         WindowCompat.getInsetsController(window, window.decorView).apply {
-            isAppearanceLightNavigationBars = true
             isAppearanceLightStatusBars = true
         }
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.cry)
     }
 }
