@@ -1,6 +1,8 @@
 package com.fara7.tom_and_jerry
 
 import android.os.Bundle
+import android.view.View
+import android.widget.ScrollView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -13,5 +15,7 @@ class MainActivity : AppCompatActivity() {
             isAppearanceLightStatusBars = true
         }
         setContentView(R.layout.cry)
+        val scrollView = findViewById<ScrollView>(R.id.scrollable)
+        scrollView.systemBarsPadding()
     }
 }

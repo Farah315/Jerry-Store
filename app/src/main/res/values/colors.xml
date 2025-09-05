@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
     <color name="tint0">#1F1F1E</color>
+        <color name="surface">#EEF4F6</color>
+        <color name="surface_high">#E9F6FB</color>
+        <color name="white">#FFFFFFFF</color>
+        <color name="white_80">#CCFFFFFF</color>
+        <color name="white_4">#0AFFFFFF</color>
+        <color name="black">#1F1F1E</color>
+        <color name="black_15">#261F1F1E</color>
+        <color name="primary">#03578A</color>
+        <color name="primary_gradient_1">#03446A</color>
+        <color name="primary_gradient_2">#0685D0</color>
+        <color name="hint">#969799</color>
+        <color name="hint_on_surface">#A5A6A4</color>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF4F6">
@@ -58,12 +58,11 @@
             android:background="@drawable/border_avatar"
             android:padding="8dp"
             android:src="@drawable/notification"
-            app:layout_constraintBottom_toTopOf="@+id/filter_button"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/filter_button"
-            app:layout_constraintTop_toTopOf="@+id/header_title"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/profile_image"
             app:tint="@color/tint0" />
 
         <TextView
@@ -97,26 +96,28 @@
             android:id="@+id/searchHint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="3dp"
             android:drawablePadding="4dp"
+            android:textColor="#969799"
             android:hint="@string/search_about_tom"
             android:paddingStart="12dp"
+            android:textColorHint="#969799"
             app:drawableStartCompat="@drawable/search_normal"
             app:drawableTint="#969799"
             app:layout_constraintBottom_toBottomOf="@id/search_bar"
             app:layout_constraintEnd_toEndOf="@id/search_bar"
-            app:layout_constraintStart_toStartOf="@id/search_bar" />
+            app:layout_constraintStart_toStartOf="@id/search_bar"
+            app:layout_constraintTop_toTopOf="@+id/search_bar" />
 
         <ImageButton
             android:id="@+id/filter_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginTop="20dp"
             android:background="@drawable/my_button"
             android:padding="12dp"
             android:src="@drawable/filter_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/notification" />
+            app:layout_constraintTop_toTopOf="@+id/search_bar" />
 
         <TextView
             android:id="@+id/base_card"
